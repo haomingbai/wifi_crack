@@ -83,4 +83,9 @@ for password in dictionary :
     test = connect(ssid,password)
     if test == True :
         break
-print("The password of " + ssid +" is  " + password + ".")
+
+#Print the result.
+if test == True :
+    print("The password of " + ssid +" is  " + password + ".")
+else :
+    print("The password of the network cannot be found.")
